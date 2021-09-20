@@ -45,3 +45,10 @@ nav ul :hover{
     color: black;
     font-weight: 800;
 }
+.btn-primary{
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0,.2);
+}
