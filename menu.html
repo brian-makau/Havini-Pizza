@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./css/menu.css">
     <title>Menu</title>
 </head>
+
 <body>
     <div class="home-page">
         <div>
@@ -27,7 +29,7 @@
     <h1 class="pageHeading">ORDER UP!</h1>
 
     <div class="container">
-        <form>
+        <form onsubmit="return false">
             <div class="mb-3">
                 <label for="pizzaType" class="form-label">Type</label>
                 <select name="pizzaType" class="form-select" id="type">
@@ -55,7 +57,7 @@
 
             <div class="mb-3">
                 <label class="form-label" for="pizzaCrust">Crusts</label>
-                <select class="form-select" name="pizzaCrust" id="Crust">
+                <select class="form-select" name="pizzaCrust" id="crust">
                     <option></option>
                     <option>Stuffed Crust</option>
                     <option>Cracker Crust</option>
@@ -77,7 +79,7 @@
 
             <div>
                 <label for="numberOfPizzas" class="form-label">Number of pizzas</label>
-                <input type="number" class="form-control">
+                <input type="number" class="form-control" id="number">
             </div>
 
             <div>
@@ -89,8 +91,10 @@
                 </select>
             </div>
             <div>
-                <button class="button">Order</button>
+                <button class="button" type="submit" onclick="getValues()">Order</button>
             </div>
         </form>
     </div>
+
+    <script src="./js/scripts.js"></script>
 </body>
