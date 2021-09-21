@@ -24,11 +24,11 @@
         </div>
     </div>
 
-    <h1 class="pageHeading">ORDER UP</h1>
+    <h1 class="pageHeading">ORDER UP!</h1>
 
-    <div>
+    <div class="container">
         <form>
-            <div>
+            <div class="mb-3">
                 <label for="pizzaType" class="form-label">Type</label>
                 <select name="pizzaType" class="form-select" id="type">
                     <option></option>
@@ -43,7 +43,7 @@
                 </select>
             </div>
 
-            <div>
+            <div class="mb-3">
                 <label class="form-label" for="pizzaSize">Sizes</label>
                 <select class="form-select" name="pizzaSize" id="size">
                     <option></option>
@@ -53,7 +53,7 @@
                 </select>
             </div>
 
-            <div>
+            <div class="mb-3">
                 <label class="form-label" for="pizzaCrust">Crusts</label>
                 <select class="form-select" name="pizzaCrust" id="Crust">
                     <option></option>
@@ -64,15 +64,24 @@
                 </select>
             </div>
 
-            <div>
+            <div class="mb-3">
                 <label class="form-label" for="pizzaTopping">Toppings</label>
                 <select class="form-select" name="pizzaTopping" id="topping">
                     <option></option>
-                    <option>Pepperoni</option>
-                    <option>Mushrooms</option>
-                    <option>Bacon</option>
-                    <option>Olives</option>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="mushrooms">Mushrooms</option>
+                    <option value="bacon">Bacon</option>
+                    <option value="olives">Olives</option>
                 </select>
+            </div>
+
+            <div>
+                <label for="numberOfPizzas" class="form-label">Number of pizzas</label>
+                <input type="number" class="form-control">
+            </div>
+
+            <div>
+                <button class="button">Order</button>
             </div>
         </form>
     </div>

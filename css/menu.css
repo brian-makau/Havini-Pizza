@@ -38,3 +38,19 @@ nav ul :hover{
     color: black;
     background-color: rgb(255, 255, 255);
 }
+.pageHeading{
+    text-align: center;
+    font-size: 60px;
+    color: brown;
+}
+.form-label{
+    font-size: 20px;
+    color: brown;
+}
+.button{
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: brown;
+    margin-top: 10px;
+}
